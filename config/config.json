@@ -1,6 +1,6 @@
 {
     "MONGO_URL":"mongodb+srv://kickr:lV9yc8yKkDv2iSeb@cluster0.ee76l.mongodb.net/kickrDb?retryWrites=true&w=majority",
-    "PORT":"4001",
+   
     "JWT_SECRET":"dhkbasdkjjjjjjjjjjjjjjjjjjjjjdcdsssvds"
    
 }

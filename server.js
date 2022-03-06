@@ -19,7 +19,7 @@ mongoose.connect(config.MONGO_URL).then((data)=>{
 // routes
 app.use("/users", require("./routes/users"));
 
-const port = config.PORT || 4001;
+const port = process.env.PORT || 4001;
 app.listen(port,(req,res)=>{
     console.log(`Server is running on the :${port}`);
 })
