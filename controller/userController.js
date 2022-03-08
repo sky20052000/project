@@ -151,6 +151,20 @@ req.end();
             return res.status(500).json({msg:err.message});
         }
     },
+   //data list
+    dataList:async(req,res)=>{
+      try{
+        console.log(req.body);
+        const data = await Register.find();
+        return res.status(200).json({
+            message:"success",
+            data:data
+        })
+      }catch(err){
+          return res.status(500).json({msg:err.message}); 
+      }
+  },
+  
 
     // login with google
 
